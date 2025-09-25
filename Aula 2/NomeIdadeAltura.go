@@ -6,8 +6,8 @@ const Pi = 3.14159
 
 func main() {
 	var nome string
-	var idade int
-	var altura uint16
+	var idade int8
+	var altura uint8
 	fmt.Println("Insira seu nome, altura(Centimetros) e idade")
 	fmt.Scanf("%s\n", &nome)
 	fmt.Scanf("%d\n", &altura)
