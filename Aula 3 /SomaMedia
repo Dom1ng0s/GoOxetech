@@ -1,0 +1,22 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	inteiros := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+	soma, media := SomaMedia(inteiros)
+
+	fmt.Println(soma, media)
+
+}
+
+func SomaMedia(lista []int) (int, float64) {
+	var soma int = 0
+	var contador int = 0
+	for _, numero := range lista {
+		soma += numero
+		contador++
+	}
+	return soma, float64(soma) / float64(contador)
+}
