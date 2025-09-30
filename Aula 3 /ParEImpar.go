@@ -9,7 +9,7 @@ func main() {
 }
 
 func parEImpar(a int) {
-	for i := 0; i < a; i++ {
+	for i := 1; i < a; i++ {
 		if i%2 == 0 {
 			fmt.Printf("%d é par\n", i)
 		} else {
